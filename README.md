@@ -9,18 +9,21 @@
 ```bash
 npm install --save react-status-timeline
 ```
-
+Or
+```bash
+yarn add react-status-timeline
+```
 ## Usage
 
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-status-timeline'
+import StatusTimeLine from 'react-status-timeline'
 import 'react-status-timeline/dist/index.css'
 
 class Example extends Component {
   render() {
-    return <MyComponent />
+    return <StatusTimeLine />
   }
 }
 ```

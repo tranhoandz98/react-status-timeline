@@ -21,11 +21,11 @@ import React, { Component } from 'react'
 import StatusTimeLine from 'react-status-timeline'
 import 'react-status-timeline/dist/index.css'
 
-class Example extends Component {
-  render() {
-    return <StatusTimeLine />
-  }
+const App = () => {
+  return <StatusTimeLine/>
 }
+
+export default App
 ```
 
 ## License

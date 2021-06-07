@@ -1,21 +1,13 @@
-$primary: #007bff;
-$secondary: #6c757d;
-$success: #28a745;
-$info: #17a2b8;
-$warning: #ffc107;
-$danger: #dc3545;
-$dark:#343a40;
-$black:#212529;
-$white:#fff;
-$gray-dark:#343a40;
-$light:#f8f9fa;
+@import "variables.scss";
+@import "tooltip.scss";
 
-.StatusTimeLine {
+.StatusTimeLineX {
   @mixin notify-color($color, $type, $content) {
     .timeline__status {
       border-top: 5px $type $color;
       &::before {
         content: $content;
+        color:$white;
         background-color: $color;
         border: none;
         transition: all 200ms ease-in;
@@ -32,13 +24,10 @@ $light:#f8f9fa;
     align-items: center;
     padding: 10px;
   }
-
   .timeline__li {
     float: left;
     transition: all 200ms ease-in;
   }
-
-
   .timeline__li {
     &:first-child {
       .timeline__status {
@@ -128,6 +117,13 @@ $light:#f8f9fa;
       z-index: 56;
     }
   }
+  .timeline__step {
+    font-weight: 500;
+    color: #d6dce0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
   .timeline__li--complete {
     @include notify-color($success, solid, "✓");
   }
@@ -137,14 +133,6 @@ $light:#f8f9fa;
   .timeline__li--waiting {
     @include notify-color($warning, solid, "!");
   }
-  .timeline__step {
-    font-weight: 500;
-    color: #d6dce0;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-
 
   .timeline__tag--secondary {
     background-color: $secondary!important;
@@ -159,6 +147,10 @@ $light:#f8f9fa;
   }
   .timeline__tag--danger {
     background-color: $danger!important;
+    color: $white;
+  }
+   .timeline__tag--info {
+    background-color: $info!important;
     color: $white;
   }
 

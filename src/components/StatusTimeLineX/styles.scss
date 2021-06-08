@@ -1,7 +1,7 @@
 @import "variables.scss";
 @import "tooltip.scss";
 
-.StatusTimeLineX {
+.StatusTimeLine {
   @mixin notify-color($color, $type, $content) {
     .timeline__status {
       border-top: 5px $type $color;
@@ -52,7 +52,7 @@
           position: absolute;
           color: rgb(255, 255, 255);
           background-color: rgb(255, 255, 255);
-          width: 3rem;
+          width: 3.5rem;
           height: 2rem;
           border-top: 10px solid white;
           right: 0;
@@ -110,7 +110,7 @@
       border-radius: 1.6rem;
       border: 1px solid #ddd;
       position: absolute;
-      top: -14px;
+      top: -15px;
       // left: 0;
       left: 42%;
       transition: all 200ms ease-in;

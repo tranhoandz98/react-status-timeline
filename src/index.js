@@ -9,7 +9,9 @@ import "./components/StatusTimeLineX/styles.scss";
 const StatusTimeLine = (props) => {
     return (
         <div >
-            <StatusTimeLineX />
+            <StatusTimeLineX
+            {...props}
+            />
 
         </div>
     );

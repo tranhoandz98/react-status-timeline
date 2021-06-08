@@ -36,7 +36,7 @@ export default App
 | Prop name | Description                                                                                | Default value | Example values                      |
 | --------- | ------------------------------------------------------------------------------------------ | ------------- | ----------------------------------- |
 | className | Class name(s) that will be added to rendered element along with the default StatusTimeLine | n/a           | String: "class-name-1 class-name-2" |
-data|Array data status|[{status: 'complete',color: 'success',stepName: 'Đã ',statusStep: 'Hoàn thành',step: 'Bước 1',},{status: 'complete',color: danger',stepName: 'Từ chối rồi',statusStep: 'Từ chối',step: 'Bước 2'}]|Default value|
+data|Array data status|[{status: 'complete',color: success',stepName: 'Đã xong',statusStep: 'Hoàn thành',step: 'Bước 1',},{status: 'cancel',color: 'danger',stepName: 'Từ chối rồi',statusStep: 'Từ chối',step: Bước 2'}]|Default value|
 statusCurrent|Current state of the timeline|2|Number: 1|
 isStart|Show start status default| true|Boolean: <ul><li>`true`</li><li>`false`</li></ul>|
 isEnd|Show end status default| true|Boolean: <ul><li>`true`</li><li>`false`</li></ul>|

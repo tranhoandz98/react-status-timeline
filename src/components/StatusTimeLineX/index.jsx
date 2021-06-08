@@ -138,7 +138,7 @@ StatusTimeLineX.defaultProps = {
             step: 'Bước 1',
         },
         {
-            status: 'complete',
+            status: 'cancel',
             color: 'danger',
             stepName: 'Từ chối rồi',
             statusStep: 'Từ chối',

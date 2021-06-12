@@ -16,6 +16,7 @@ const StatusTimeLineX = (props) => {
         txtActionEnd,
         captionStep,
         className,
+        txtStep
     } = props;
     const [statusEnd, setStatusEnd] = useState('');
 
@@ -85,7 +86,7 @@ ${item?.statusStep ? 'timeline__tag--success' : 'timeline__tag--none'}
                         </div>
                         <div className='timeline__status'>
                             <div className='timeline__step '>
-                                {item.step || <span>&nbsp;</span>}
+                               {txtStep}{item.step || <span>&nbsp;</span>}
                             </div>
                         </div>
                     </li>
@@ -126,23 +127,23 @@ StatusTimeLineX.propTypes = {
     txtEnd: PropTypes.string,
     txtActionEnd: PropTypes.string,
     captionStep: PropTypes.string,
+    txtStep: PropTypes.string,
 };
 StatusTimeLineX.defaultProps = {
-  className:"",
     data: [
         {
             status: 'complete',
             color: 'success',
             stepName: 'Đã xong',
             statusStep: 'Hoàn thành',
-            step: 'Bước 1',
+            step: '1',
         },
         {
             status: 'cancel',
             color: 'danger',
             stepName: 'Từ chối rồi',
             statusStep: 'Từ chối',
-            step: 'Bước 2',
+            step: '2',
         },
     ],
     statusCurrent: 2,

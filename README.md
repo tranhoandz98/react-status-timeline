@@ -46,6 +46,7 @@ txtActionStart|Action default start status|"Soạn thảo"|String: "Write someth
 txtEnd|Text end status| "Bắt đầu"|String: "Write something"|
 txtActionEnd|Action default end status|"Hoàn thành"|String: "Write something"|
 captionStep|Caption name + step name - show in title attribute of each step|"Tên bước: "|String: "Write something"|
+txtStep|Text stand in front of the step| n/a|String: "Write something"|
 
 #### Props data
 |Key|Description|Example values|

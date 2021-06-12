@@ -16,7 +16,9 @@ const StatusTimeLineX = (props) => {
         txtActionEnd,
         captionStep,
         className,
-        txtStep
+        txtStep,
+        classNameStart,
+        classNameEnd
     } = props;
     const [statusEnd, setStatusEnd] = useState('');
 
@@ -52,7 +54,7 @@ const StatusTimeLineX = (props) => {
                                 className={`timeline__content
                             timeline__tag
 ${txtActionStart ? 'timeline__tag--success' : 'timeline__tag--none'}
-
+${classNameStart}
                              text-uppercase`}
                             >
                                 {txtActionStart}
@@ -77,8 +79,8 @@ ${txtActionStart ? 'timeline__tag--success' : 'timeline__tag--none'}
                                 timeline__tag
                                 timeline__tag--secondary
                                 timeline__tag--${item.color}
-                                 ${item.className}
-${item?.statusStep ? 'timeline__tag--success' : 'timeline__tag--none'}
+                                ${item.className}
+                                ${item?.statusStep ? '' : 'timeline__tag--none'}
                                  `}
                             >
                                 {item?.statusStep}
@@ -94,13 +96,15 @@ ${item?.statusStep ? 'timeline__tag--success' : 'timeline__tag--none'}
                 {isEnd && (
                     <li
                         className={`timeline__li  timeline__li--${statusEnd}`}
-
                         title={txtActionEnd}
                         data-pr-tooltip={txtActionEnd}
                     >
                         <div className='timeline__timestamp'>
                             <div
-                                className={`timeline__content text-uppercase timeline__tag timeline__tag--none`}
+                                className={`timeline__content text-uppercase
+                                timeline__tag--none
+                                ${classNameEnd}
+                                `}
                             >
                                 {txtActionEnd || <span>&nbsp;</span>}
                             </div>
@@ -128,6 +132,8 @@ StatusTimeLineX.propTypes = {
     txtActionEnd: PropTypes.string,
     captionStep: PropTypes.string,
     txtStep: PropTypes.string,
+    classNameStart:PropTypes.string,
+    classNameEnd:PropTypes.string,
 };
 StatusTimeLineX.defaultProps = {
     data: [
@@ -154,6 +160,7 @@ StatusTimeLineX.defaultProps = {
     txtEnd: 'Kết thúc',
     txtActionEnd: 'Hoàn thành',
     captionStep: 'Tên bước: ',
+
 };
 
 export default StatusTimeLineX;

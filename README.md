@@ -43,10 +43,12 @@ isEnd|Show end status default| true|Boolean: <ul><li>`true`</li><li>`false`</li>
 onError|Function run when error|n/a|Function: ...
 txtStart|Text start status| "Bắt đầu"|String: "Write something"|
 txtActionStart|Action default start status|"Soạn thảo"|String: "Write something"|
-txtEnd|Text end status| "Bắt đầu"|String: "Write something"|
+txtEnd|Text end status| "Kết thúc"|String: "Write something"|
 txtActionEnd|Action default end status|"Hoàn thành"|String: "Write something"|
 captionStep|Caption name + step name - show in title attribute of each step|"Tên bước: "|String: "Write something"|
 txtStep|Text stand in front of the step| n/a|String: "Write something"|
+classNameStart|Class name(s) that will be added to render first element along with the default class "timeline__content" if isStart=true|n/a|String: "Write something"|
+classNameEnd|Class name(s) that will be added to render last element along with the default class "timeline__content" if isEnd=true|n/a|String: "Write something"|
 
 #### Props data
 |Key|Description|Example values|
@@ -57,6 +59,11 @@ stepName|Step name - show in title attribute of each step|String: "Write somethi
 statusStep|Text status|String: "Write something"|
 step|Action status|String: "Write something"
 
+#### className
+
+|Content|Description|Example values|
+|----|----|----|
+|timeline__tag--none| hide attribute tag with element has class "timeline__content"| className="timeline__tag--none"|
 ## License
 
 MIT © [tranhoandz98](https://github.com/tranhoandz98)

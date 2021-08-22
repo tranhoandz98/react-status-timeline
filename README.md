@@ -5,6 +5,9 @@ Status timeline for React.js
 [![NPM](https://img.shields.io/npm/v/react-status-timeline.svg)](https://www.npmjs.com/package/react-status-timeline) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 ![downloads](https://img.shields.io/npm/dt/react-status-timeline)
 
+## Demo
+<a href="https://tranhoandz98.github.io/react-status-timeline/">https://tranhoandz98.github.io/react-status-timeline/</a>
+
 ## Install
 
 ```bash

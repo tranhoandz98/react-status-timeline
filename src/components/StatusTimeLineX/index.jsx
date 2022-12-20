@@ -18,7 +18,7 @@ const StatusTimeLineX = (props) => {
         className,
         txtStep,
         classNameStart,
-        classNameEnd
+        classNameEnd,
     } = props;
     const [statusEnd, setStatusEnd] = useState('');
 
@@ -38,7 +38,6 @@ const StatusTimeLineX = (props) => {
             console.error('error: ', error);
             onError();
         }
-        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [data]);
     return (
         <div className={`StatusTimeLine ${className}`}>
@@ -88,7 +87,8 @@ ${classNameStart}
                         </div>
                         <div className='timeline__status'>
                             <div className='timeline__step '>
-                               {txtStep}{item.step || <span>&nbsp;</span>}
+                                {txtStep}
+                                {item.step || <span>&nbsp;</span>}
                             </div>
                         </div>
                     </li>
@@ -132,8 +132,8 @@ StatusTimeLineX.propTypes = {
     txtActionEnd: PropTypes.string,
     captionStep: PropTypes.string,
     txtStep: PropTypes.string,
-    classNameStart:PropTypes.string,
-    classNameEnd:PropTypes.string,
+    classNameStart: PropTypes.string,
+    classNameEnd: PropTypes.string,
 };
 StatusTimeLineX.defaultProps = {
     data: [
@@ -160,7 +160,6 @@ StatusTimeLineX.defaultProps = {
     txtEnd: 'Kết thúc',
     txtActionEnd: 'Hoàn thành',
     captionStep: 'Tên bước: ',
-
 };
 
 export default StatusTimeLineX;

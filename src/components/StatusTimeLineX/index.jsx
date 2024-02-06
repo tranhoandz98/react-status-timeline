@@ -60,6 +60,8 @@ ${classNameStart}
                             </div>
                         </div>
                         <div className='timeline__status'>
+                            <div class='timeline__status__circle'></div>
+                            <div class='timeline__status__icon'></div>
                             <div className='timeline__step'>{txtStart || <span>&nbsp;</span>}</div>
                         </div>
                     </li>
@@ -86,6 +88,8 @@ ${classNameStart}
                             </div>
                         </div>
                         <div className='timeline__status'>
+                            <div class='timeline__status__circle'></div>
+                            <div class='timeline__status__icon'></div>
                             <div className='timeline__step '>
                                 {txtStep}
                                 {item.step || <span>&nbsp;</span>}
@@ -110,6 +114,8 @@ ${classNameStart}
                             </div>
                         </div>
                         <div className='timeline__status'>
+                            <div class='timeline__status__circle'></div>
+                            <div class='timeline__status__icon'></div>
                             <div className='timeline__step'>{txtEnd || <span>&nbsp;</span>}</div>
                         </div>
                     </li>
